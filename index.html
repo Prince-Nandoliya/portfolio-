@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ============ SEO ============ -->
+    <title>Prince Nandoliya | Full Stack Developer</title>
+    <meta name="description" content="Portfolio of Prince Nandoliya, a Full Stack Developer and BCA student skilled in HTML, CSS, Bootstrap, JavaScript, Node.js, Express.js and MongoDB.">
+    <meta name="keywords" content="Prince Nandoliya, Full Stack Developer, Node.js, Express.js, MongoDB, JavaScript, Bootstrap, Web Developer, Portfolio, Bhavnagar, Student Developer">
+    <meta name="author" content="Prince Nandoliya">
+    <meta name="theme-color" content="#0a0f1e">
+
+    <!-- Open Graph (basic) -->
+    <meta property="og:title" content="Prince Nandoliya | Full Stack Developer">
+    <meta property="og:description" content="Portfolio of Prince Nandoliya, a Full Stack Developer and BCA student skilled in HTML, CSS, Bootstrap, JavaScript, Node.js, Express.js and MongoDB.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                Prince<span class="brand-gradient">.dev</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certifications">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a class="btn btn-nav me-2" href="assets/resume/PrinceResume.pdf" download>
+                            <i class="fa-solid fa-download"></i> Resume
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header id="home" class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+
+        <div class="container">
+            <div class="row align-items-center g-4 gy-5">
+
+                <!-- Left: Text -->
+                <div class="col-md-6 text-center text-lg-start">
+                    <p class="hero-hello">Hi, I'm</p>
+                    <h1 class="hero-name gradient-text">Prince Nandoliya</h1>
+                    <p class="hero-typed">
+                        <span id="typed-text">Full Stack Developer</span>
+                        <span class="typed-cursor" aria-hidden="true">|</span>
+                    </p>
+                    <p class="hero-intro">
+                        BCA student and Full Stack Developer passionate about building
+                        responsive and modern web applications.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-gradient">
+                            View My Projects
+                        </a>
+                        <a href="assets/resume/PrinceResume.pdf" class="btn btn-outline-light" download>
+                            <i class="fa-solid fa-download me-1"></i> Download Resume
+                        </a>
+                        <a href="#contact" class="btn btn-outline-light">Contact Me</a>
+                    </div>
+
+                    <div class="hero-social">
+                        <a href="https://github.com/princenandoliya" target="_blank" rel="noopener" aria-label="GitHub profile">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/princenandoliya2303/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:princenandoliya@gmail.com" aria-label="Send email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Profile image -->
+                <div class="col-md-6">
+                    <!-- Put your profile photo at assets/images/profile.png -->
+                    <div class="hero-img-wrap">
+                        <img src="assets/images/profile.png"
+                             alt="Profile photo of Prince Nandoliya"
+                             class="hero-profile"
+                             width="400" height="400">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ============ ABOUT ============ -->
+        <section id="about" class="section" aria-labelledby="about-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title" id="about-title">Know <span class="gradient-text">Who I Am</span></h2>
+                    <p class="section-sub">A quick overview of my journey and focus.</p>
+                </div>
+
+                <div class="row g-4 align-items-center">
+                    <!-- About text -->
+                    <div class="col-lg-7">
+                        <div class="glass about-card reveal">
+                            <h3>A Student Developer on a Learning Path</h3>
+                            <p class="about-text">
+                                Enthusiastic BCA student at Surendranagar University and Full Stack Development
+                                trainee at Red &amp; White Multimedia Education. Skilled in HTML, CSS, Bootstrap,
+                                JavaScript, Node.js, Express.js, and MongoDB. Familiar with REST APIs, Git, GitHub,
+                                JWT Authentication, and Cloudinary. Passionate about building responsive web
+                                applications and continuously learning modern web technologies. Seeking an
+                                opportunity to apply my skills and grow as a Full Stack Developer.
+                            </p>
+                            <ul class="about-facts">
+                                <li>
+                                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                    <span>Bhavnagar, Gujarat, India</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                                    <span>princenandoliya@gmail.com</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+                                    <span>Full Stack Developer Trainee</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Stat cards -->
+                    <div class="col-lg-5">
+                        <div class="row g-3">
+                            <div class="col-6 col-md-3 col-lg-6 reveal">
+                                <div class="glass stat-card">
+                                    <div class="stat-icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></div>
+                                    <h3>BCA Student</h3>
+                                    <p>Surendranagar University</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 col-lg-6 reveal">
+                                <div class="glass stat-card">
+                                    <div class="stat-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+                                    <h3>Full Stack Trainee</h3>
+                                    <p>Red &amp; White Education</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 col-lg-6 reveal">
+                                <div class="glass stat-card">
+                                    <div class="stat-icon"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div>
+                                    <h3>Web Development</h3>
+                                    <p>Responsive &amp; Modern</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 col-lg-6 reveal">
+                                <div class="glass stat-card">
+                                    <div class="stat-icon"><i class="fa-solid fa-folder" aria-hidden="true"></i></div>
+                                    <h3>2+ Projects</h3>
+                                    <p>Showcased on GitHub</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SKILLS ============ -->
+        <section id="skills" class="section" aria-labelledby="skills-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">My Skills</span>
+                    <h2 class="section-title" id="skills-title">Technical <span class="gradient-text">Skills</span></h2>
+                    <p class="section-sub">Technologies and tools I work with every day.</p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Frontend -->
+                    <div class="col-12 col-sm-6 col-lg-4 reveal">
+                        <div class="glass skill-card">
+                            <div class="skill-card-head">
+                                <div class="skill-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+                                <h3>Frontend</h3>
+                            </div>
+                            <div class="skill-chips">
+                                <span class="chip"><i class="fa-brands fa-html5 c-html" aria-hidden="true"></i>HTML5</span>
+                                <span class="chip"><i class="fa-brands fa-css3-alt c-css" aria-hidden="true"></i>CSS3</span>
+                                <span class="chip"><i class="fa-brands fa-js c-js" aria-hidden="true"></i>JavaScript</span>
+                                <span class="chip"><i class="fa-brands fa-bootstrap c-bs" aria-hidden="true"></i>Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="col-12 col-sm-6 col-lg-4 reveal">
+                        <div class="glass skill-card">
+                            <div class="skill-card-head">
+                                <div class="skill-icon"><i class="fa-solid fa-server" aria-hidden="true"></i></div>
+                                <h3>Backend</h3>
+                            </div>
+                            <div class="skill-chips">
+                                <span class="chip"><i class="fa-brands fa-node-js c-node" aria-hidden="true"></i>Node.js</span>
+                                <span class="chip"><i class="fa-solid fa-bolt c-express" aria-hidden="true"></i>Express.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database -->
+                    <div class="col-12 col-sm-6 col-lg-4 reveal">
+                        <div class="glass skill-card">
+                            <div class="skill-card-head">
+                                <div class="skill-icon"><i class="fa-solid fa-database" aria-hidden="true"></i></div>
+                                <h3>Database</h3>
+                            </div>
+                            <div class="skill-chips">
+                                <span class="chip"><i class="fa-solid fa-database c-mongo" aria-hidden="true"></i>MongoDB</span>
+                                <span class="chip"><i class="fa-solid fa-diagram-project c-mongoose" aria-hidden="true"></i>Mongoose</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="col-12 col-sm-6 col-lg-4 reveal">
+                        <div class="glass skill-card">
+                            <div class="skill-card-head">
+                                <div class="skill-icon"><i class="fa-solid fa-wrench" aria-hidden="true"></i></div>
+                                <h3>Tools</h3>
+                            </div>
+                            <div class="skill-chips">
+                                <span class="chip"><i class="fa-brands fa-git-alt c-git" aria-hidden="true"></i>Git</span>
+                                <span class="chip"><i class="fa-brands fa-github c-github" aria-hidden="true"></i>GitHub</span>
+                                <span class="chip"><i class="fa-brands fa-vscode c-vscode" aria-hidden="true"></i>VS Code</span>
+                                <span class="chip"><i class="fa-solid fa-paper-plane c-postman" aria-hidden="true"></i>Postman</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Tools -->
+                    <div class="col-12 col-sm-6 col-lg-4 reveal">
+                        <div class="glass skill-card">
+                            <div class="skill-card-head">
+                                <div class="skill-icon"><i class="fa-solid fa-microchip" aria-hidden="true"></i></div>
+                                <h3>AI Tools</h3>
+                            </div>
+                            <div class="skill-chips">
+                                <span class="chip"><i class="fa-solid fa-robot c-chatgpt" aria-hidden="true"></i>ChatGPT</span>
+                                <span class="chip"><i class="fa-solid fa-wand-magic-sparkles c-copilot" aria-hidden="true"></i>GitHub Copilot</span>
+                                <span class="chip"><i class="fa-solid fa-brain c-claude" aria-hidden="true"></i>Claude</span>
+                                <span class="chip"><i class="fa-solid fa-code c-opencode" aria-hidden="true"></i>Open Code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ PROJECTS ============ -->
+        <section id="projects" class="section" aria-labelledby="projects-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">My Work</span>
+                    <h2 class="section-title" id="projects-title">Featured <span class="gradient-text">Projects</span></h2>
+                    <p class="section-sub">A few things I've built while learning.</p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Project 1 -->
+                    <div class="col-12 col-md-6 reveal">
+                        <article class="glass project-card">
+                            <div class="project-top">
+                                <div class="project-icon"><i class="fa-solid fa-user-shield" aria-hidden="true"></i></div>
+                                <span class="project-tag">Backend</span>
+                            </div>
+                            <h3>JWT Authentication System</h3>
+                            <p>
+                                Built a secure JWT-based authentication system with user login, registration,
+                                and protected routes using Node.js, Express.js, and MongoDB.
+                            </p>
+                            <div class="tech-badges">
+                                <span class="badge tech-badge">Node.js</span>
+                                <span class="badge tech-badge">Express.js</span>
+                                <span class="badge tech-badge">MongoDB</span>
+                                <span class="badge tech-badge">JWT</span>
+                            </div>
+                            <a href="https://github.com/princenandoliya/node-js/tree/main/10_jwt_authentication"
+                               class="btn project-btn" target="_blank" rel="noopener">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+                            </a>
+                        </article>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="col-12 col-md-6 reveal">
+                        <article class="glass project-card">
+                            <div class="project-top">
+                                <div class="project-icon"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></div>
+                                <span class="project-tag">Frontend</span>
+                            </div>
+                            <h3>E-commerce Project</h3>
+                            <p>
+                                Developed a responsive E-commerce website using HTML, CSS, JavaScript, and
+                                Bootstrap. Implemented product listing, shopping cart, local storage, and
+                                responsive UI.
+                            </p>
+                            <div class="tech-badges">
+                                <span class="badge tech-badge">HTML</span>
+                                <span class="badge tech-badge">CSS</span>
+                                <span class="badge tech-badge">JavaScript</span>
+                                <span class="badge tech-badge">Bootstrap</span>
+                                <span class="badge tech-badge">LocalStorage</span>
+                            </div>
+                            <a href="https://github.com/princenandoliya/Javascript/tree/main/e-commerce-project"
+                               class="btn project-btn" target="_blank" rel="noopener">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ EDUCATION ============ -->
+        <section id="education" class="section" aria-labelledby="education-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">Education</span>
+                    <h2 class="section-title" id="education-title">My Learning <span class="gradient-text">Journey</span></h2>
+                    <p class="section-sub">Where I'm building my foundation.</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> 2026 - 2029</div>
+                        <div class="glass timeline-card">
+                            <h3>BCA - Computer Applications</h3>
+                            <p class="timeline-institute">Surendranagar University</p>
+                            <span class="badge cert-badge">Degree</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> 2025 - Present</div>
+                        <div class="glass timeline-card">
+                            <h3>Full Stack Developer</h3>
+                            <p class="timeline-institute">Red &amp; White Skill Education, Bhavnagar</p>
+                            <span class="badge cert-badge">Training</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CERTIFICATIONS ============ -->
+        <section id="certifications" class="section" aria-labelledby="certifications-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">Certifications</span>
+                    <h2 class="section-title" id="certifications-title">Certificates &amp; <span class="gradient-text">Recognitions</span></h2>
+                    <p class="section-sub">A few acknowledgements along the way.</p>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 reveal">
+                        <div class="glass cert-card">
+                            <div class="cert-icon"><i class="fa-solid fa-award" aria-hidden="true"></i></div>
+                            <h3>Future Forward</h3>
+                            <p>Design + Development Program</p>
+                            <span class="badge cert-badge"><i class="fa-solid fa-certificate" aria-hidden="true"></i> Certificate</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 reveal">
+                        <div class="glass cert-card">
+                            <div class="cert-icon"><i class="fa-solid fa-trophy" aria-hidden="true"></i></div>
+                            <h3>Tech War</h3>
+                            <p>Participation Certificate</p>
+                            <span class="badge cert-badge"><i class="fa-solid fa-medal" aria-hidden="true"></i> Participation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section id="contact" class="section" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">Contact</span>
+                    <h2 class="section-title" id="contact-title">Let's <span class="gradient-text">Work Together</span></h2>
+                    <p class="section-sub">Have an opportunity or a question? I'd love to hear from you.</p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Contact info -->
+                    <div class="col-lg-5 reveal">
+                        <div class="glass contact-info">
+                            <h3>Contact Information</h3>
+                            <p class="contact-note">
+                                Feel free to reach out through any of the channels below. I usually reply quickly.
+                            </p>
+
+                            <ul class="contact-list">
+                                <li>
+                                    <div class="contact-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
+                                    <div>
+                                        <span class="contact-label">Email</span>
+                                        <a href="mailto:princenandoliya@gmail.com">princenandoliya@gmail.com</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contact-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+                                    <div>
+                                        <span class="contact-label">Phone</span>
+                                        <a href="tel:+919274280507">+91 92742 80507</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contact-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+                                    <div>
+                                        <span class="contact-label">Location</span>
+                                        <span class="contact-value">Bhavnagar, Gujarat, India</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contact-icon"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></div>
+                                    <div>
+                                        <span class="contact-label">LinkedIn</span>
+                                        <a href="https://www.linkedin.com/in/princenandoliya2303/" target="_blank" rel="noopener">
+                                            in/princenandoliya2303
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contact-icon"><i class="fa-brands fa-github" aria-hidden="true"></i></div>
+                                    <div>
+                                        <span class="contact-label">GitHub</span>
+                                        <a href="https://github.com/Prince-Nandoliya" target="_blank" rel="noopener">
+                                            github.com/princenandoliya
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Contact form -->
+                    <div class="col-lg-7 reveal">
+                        <form id="contactForm" class="glass contact-form" novalidate>
+                            <h3>Send Me a Message</h3>
+
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" name="name"
+                                       placeholder="Enter your name" autocomplete="name" required>
+                                <div class="invalid-feedback">Please enter your name (at least 2 characters).</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Your Email</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                       placeholder="Enter your email" autocomplete="email" required>
+                                <div class="invalid-feedback">Please enter a valid email address.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Your Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5"
+                                          placeholder="Write your message here..." required></textarea>
+                                <div class="invalid-feedback">Please write a message (at least 10 characters).</div>
+                            </div>
+
+                            <button type="submit" class="btn btn-gradient w-100">
+                                Send Message <i class="fa-solid fa-paper-plane ms-1" aria-hidden="true"></i>
+                            </button>
+
+                            <!-- Success / error messages -->
+                            <div id="formAlert" class="alert mt-3 d-none" role="alert" aria-live="polite"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <a class="navbar-brand" href="#home">
+                    Prince<span class="brand-gradient">.dev</span>
+                </a>
+
+                <div class="footer-social">
+                    <a href="https://github.com/Prince-Nandoliya" target="_blank" rel="noopener" aria-label="GitHub profile">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/princenandoliya2303/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:princenandoliya@gmail.com" aria-label="Send email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copy">
+                    &copy; <span id="year">2026</span> Prince Nandoliya. All rights reserved.
+                </p>
+                <p class="footer-credit">
+                    Made with <i class="fa-solid fa-heart" aria-hidden="true"></i> by Prince Nandoliya
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
